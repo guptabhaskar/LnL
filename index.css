@@ -2341,9 +2341,9 @@ div.aboutColumns-image img {
 }
 @media (min-width: 960px) {
   .pageList-item {
-    -ms-flex-preferred-size: 33.33%;
-    flex-basis: 33.33%;
-    width: 33.33%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    width: 50%;
   }
 }
 .pageList-item:hover {
