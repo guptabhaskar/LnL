@@ -350,7 +350,8 @@ button.-cta.-color-white {
 .button.-cta:focus .arrowPacman-clip,
 .button.-cta:hover .arrowPacman-clip,
 button.-cta:focus .arrowPacman-clip,
-button.-cta:hover .arrowPacman-clip {
+button.-cta:hover .arrowPacman-clip,
+.pageList-cta-text:hover .arrowPacman-clip {
   -webkit-animation-delay: 150ms;
   animation-delay: 150ms;
   -webkit-animation-duration: 0.8s;
