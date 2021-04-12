@@ -2172,7 +2172,7 @@ div.aboutColumns-image img {
 }
 .jobsCta {
   --jobsCta-scale: 2.08;
-  background-color: #E3F4DC;
+  background-color: #ACB5AC;
 
   height: calc(var(--jobsCta-scale) * 500px);
   overflow: hidden;
@@ -2183,7 +2183,7 @@ div.aboutColumns-image img {
 @media (min-width: 640px) {
   .jobsCta {
     --jobsCta-scale: 1.25;
-    background-color: #E3F4DC;
+    background-color: #ACB5AC;
   }
 }
 @media (min-width: 1120px) {
