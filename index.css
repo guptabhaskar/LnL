@@ -2905,12 +2905,12 @@ div.aboutColumns-image img {
 
 .industry-experts {
   background: #f7f7f7;
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 @media screen and (min-width: 992px) {
   .industry-experts {
-    padding: 10rem 0 13rem;
+    padding: 6rem 0 6rem;
   }
 }
 
@@ -3148,12 +3148,12 @@ html:not(.can-touch) .industry-experts__link:hover:after {
 
 .awards {
   background: #fff;
-  padding: 5rem 0
+  padding: 2rem 0
 }
 
 @media screen and (min-width:992px) {
   .awards {
-      padding: 10rem 0 13rem
+      padding: 6rem 0 6rem
   }
 }
 
