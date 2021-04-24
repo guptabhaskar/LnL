@@ -10,13 +10,18 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/product.css" />
 
     <style>
+        .dotText {
+            text-align: center;
+            margin-top: 7.5rem;
+            visibility: hidden;
+        }
 
         .dotLeft {
-            height: 15rem;
-            width: 15rem;
+            height: 5rem;
+            width: 5rem;
             background-color: #bbb;
             border-radius: 50%;
             display: flex;
@@ -26,9 +31,10 @@
         }
 
         .dotRight {
+
             float: right;
             height: 15rem;
-            width: 15rem;
+            width: 5rem;
             background-color: #bbb;
             border-radius: 50%;
             display: flex;
@@ -36,45 +42,13 @@
             justify-content: center;
         }
 
-        .dotText {
-            text-align: center;
-            margin-top: 7.5rem;
-            visibility: hidden;
-        }
-
         .dotLeft:hover+.dotText {
             visibility: visible;
         }
 
-      .dotLeft {
-        height: 15rem;
-        width: 15rem;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
-      .dotRight {
-        float: right;
-        height: 15rem;
-        width: 15rem;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .dotText {
-        text-align: center;
-        margin-top: 7.5rem;
-        visibility: hidden;
-      }
-      .dotLeft:hover + .dotText {
-        visibility: visible;
-      }
-
+        .dotRight:hover+.dotText {
+            visibility: visible;
+        }
     </style>
 </head>
 
@@ -99,7 +73,7 @@
 
                 <ul class="navigation-list">
                     <li class="navigation-listItem">
-                        <a class="navigation-link" href="/product"> Product </a>
+                        <a class="navigation-link" href="/product" data-state="active"> Product </a>
                     </li>
 
                     <li class="navigation-listItem">
@@ -175,51 +149,33 @@
         </div>
     </header>
 
-    <section class="hero -home" style="">
-        <div class="hero-stack" style="background-image: url('')">
-            <h1 class="hero-headline">
-                Upper Limb Prosthesis with <br />
-                Adaptive Grasp: <br />Water-resistant, Smart, <br />
-                and Retro-fit
+    <section class="hero -red">
+        <div class="hero-stack container" style="background-image: url('./img/CAD\ Picture_ori.png')">
+            <h1 class="hero-headline -animatedLine">
+                Meet Bionicli
             </h1>
-
-            <p class="hero-cta -home">
-                <a class="button -cta" href="/careers" title="See job listings for The Limb Factory">
-                    Join the Team
+            <img class="hero-innerImage lazy"
+                data-src="https://d33wubrfki0l68.cloudfront.net/f6f61989efb464eed171eb98d0ef6ee53b231b48/71d5d/images/pages/red-mobile-hero.png">
+            <p class="hero-subheading">
+                A high functioning multi action bionic arm.
+            </p>
+            <p class="hero-cta ">
+                <a class="button -cta -openPopup" href="https://d2w07qfgh81qmg.cloudfront.net/qv8qsqHKnpxk6dELyGyG.mp4"
+                    title="Play the video">
+                    Play Video
                     <span class="arrowPacman">
                         <span class="arrowPacman-clip">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
-                                    fill="white" />
+                                    fill="white"></path>
                             </svg>
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
-                                    fill="white" />
-                            </svg>
-                        </span>
-                    </span>
-                </a>
-
-                <a class="button -cta" href="https://www.youtube.com/watch?v=DVvmgjBL74w"
-                    title="See job listings for The Limb Factory">
-                    Watch the update
-                    <span class="arrowPacman">
-                        <span class="arrowPacman-clip">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
-                                    fill="white" />
-                            </svg>
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
-                                    fill="white" />
+                                    fill="white"></path>
                             </svg>
                         </span>
                     </span>
@@ -227,34 +183,43 @@
             </p>
         </div>
     </section>
-    <!-- main content -->
+    <!-- Main Content -->
 
-    <section>
-<<<<<<< Updated upstream
-        <div style="height: 100vh">
-            <h2 style="text-align: center">Feature</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="dotLeft" class="col-3">dgfsdfjsdfdksj</div>
-                    <div class=" dotText col-8"> dsfsdgfjs</div>
-                </div>
+    <!-- Footer -->
+    <a href="./science.html">
+        <section class="hero -footer _desktop-only -highlightHover -blue">
+            <div class="hero-stack container" style="background-image: url('/images/pages/blue-desktop-hero.png')">
+                <h1 class="hero-headline -animatedLine">
+                    Science behind Bionicli
+                </h1>
+                <p class="hero-subheading">
+                    A web of communication that allows you to move, think, feel and sense.
+                </p>
+                <p class="hero-cta">
+                    <span class="button -cta">
+                        Science
+                        <span class="arrowPacman">
+                            <span class="arrowPacman-clip">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
+                                        fill="white"></path>
+                                </svg>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
+                                        fill="white"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </span>
+                </p>
 
-                <div class="dotRight">Hi</div>
             </div>
-=======
-      <div style="height: 100vh">
-        <h2 style="text-align: center">Feature</h2>
-        <div class="container">
-          <div class="row">
-            <div class="dotLeft" class="col-3">dgfsdfjsdfdksj</div>
-            <div class="dotText col-8">dsfsdgfjs</div>
-          </div>
-
-          <div class="dotRight">Hi</div>
->>>>>>> Stashed changes
-        </div>
-    </section>
-
+        </section>
+    </a>
     <footer class="globalFooter" role="contentinfo">
         <div class="globalFooter-content">
             <a class="globalFooter-logo" href="/" title="Go to Neuralink homepage">
@@ -272,44 +237,35 @@
             <div class="globalFooter-navigation">
                 <nav class="navigation -footer" aria-labelledby="footer_navLabel">
                     <p id="footer_navLabel" class="_hidden">Footer Navigation</p>
-
                     <ul class="navigation-list">
                         <li class="navigation-listItem">
-                            <a class="navigation-link" href="/product"> Product </a>
+                            <a class="navigation-link" href="./product.html"> Product </a>
                         </li>
-
                         <li class="navigation-listItem">
-                            <a class="navigation-link" href="/science"> Science </a>
+                            <a class="navigation-link" href="./science.html"> Science </a>
                         </li>
-
                         <li class="navigation-listItem">
-                            <a class="navigation-link" href="/about"> About Us </a>
+                            <a class="navigation-link" href="./about.html"> About Us </a>
                         </li>
-
                         <li class="navigation-listItem">
-                            <a class="navigation-link" href="/contactus"> Contact Us </a>
+                            <a class="navigation-link" href="./contactus.html"> Contact Us </a>
                         </li>
-
                         <li class="navigation-listItem">
-                            <a class="navigation-link" href="/careers"> Careers </a>
+                            <a class="navigation-link" href="/careers.html"> Careers </a>
                         </li>
-
                         <li class="navigation-listItem">
-                            <a class="navigation-link" href="/blog/"> Blog </a>
+                            <a class="navigation-link" href="./blog/"> Blog </a>
                         </li>
                     </ul>
-
                     <div class="nav-social _mobile-only">
                         <a class="-color-gray globalFooter-link" href="mailto:nishant@thelimbfactory.com"
                             title="Reach out to thelimbfactory">
                             nishant@thelimbfactory.com
                         </a>
-
                         <a class="-color-gray globalFooter-link" href="https://www.instagram.com/thelimbfactory/"
                             title="Follow The Limb Factory on Instagram">
                             @thelimbfactory
                         </a>
-
                         <form id="footer_navigation_mc_embed_signup"
                             action="https://neuralink.us17.list-manage.com/subscribe/post?u=569c8d937524ae5126266001f&amp;id=a41ea28390"
                             method="post" id="footer_navigation_mc-embedded-subscribe-form"
@@ -321,24 +277,20 @@
                                     <input type="email" value="" class="newsletter-input -small required email"
                                         id="footer_navigation_mce-EMAIL" placeholder="Enter Email for Updates" />
                                 </div>
-
                                 <div id="footer_navigation_mce-responses" class="clear">
                                     <div class="response" id="footer_navigation_mce-error-response"
                                         style="display: none"></div>
                                     <div class="response" id="footer_navigation_mce-success-response"
                                         style="display: none"></div>
                                 </div>
-
                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px" aria-hidden="true">
                                     <input type="text" name="footer_navigation_b_569c8d937524ae5126266001f_a41ea28390"
                                         tabindex="-1" value="" />
                                 </div>
-
                                 <button class="newsletter-submit" type="submit"
                                     id="footer_navigation_mc-embedded-subscribe">
                                     <span class="_hidden"> Subscribe </span>
-
                                     <svg width="16" height="13" viewBox="0 0 16 13" fill="#BBBBBE"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -350,19 +302,16 @@
                     </div>
                 </nav>
             </div>
-
             <div class="globalFooter-right">
                 <div class="globalFooter-social">
                     <a class="-color-gray globalFooter-link" href="mailto:nishant@thelimbfactory.com"
                         title="Reach out to thelimbfactory">
                         nishant@thelimbfactory.com
                     </a>
-
                     <a class="-color-gray globalFooter-link" href="https://www.instagram.com/thelimbfactory/"
                         title="Follow The Limb Factory on Instagram">
                         @thelimbfactory
                     </a>
-
                     <form id="footer_mc_embed_signup"
                         action="https://neuralink.us17.list-manage.com/subscribe/post?u=569c8d937524ae5126266001f&amp;id=a41ea28390"
                         method="post" id="footer_mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
@@ -378,13 +327,11 @@
                                 <div class="response" id="footer_mce-error-response" style="display: none"></div>
                                 <div class="response" id="footer_mce-success-response" style="display: none"></div>
                             </div>
-
                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px" aria-hidden="true">
                                 <input type="text" name="footer_b_569c8d937524ae5126266001f_a41ea28390" tabindex="-1"
                                     value="" />
                             </div>
-
                             <button class="newsletter-submit" type="submit" id="footer_mc-embedded-subscribe">
                                 <span class="_hidden"> Subscribe </span>
 
@@ -404,5 +351,4 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
