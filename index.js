@@ -1,4 +1,5 @@
 "use strict";
+
 function App() {
   var careers = function careers() {
     var request = new Request(
@@ -15,12 +16,12 @@ function App() {
         };
         var departments = removeDuplicates(
           response.jobs
-            .map(function (job) {
-              return job.departments.map(function (x) {
-                return x.name;
-              });
-            })
-            .flat()
+          .map(function (job) {
+            return job.departments.map(function (x) {
+              return x.name;
+            });
+          })
+          .flat()
         );
         var jobsByDepartment = departments.map(function (department) {
           return {
@@ -193,33 +194,35 @@ function App() {
   var lazy = function lazy() {
     var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
     var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
-    var IntersectionObserverOptions = { rootMargin: "1000px" };
+    var IntersectionObserverOptions = {
+      rootMargin: "1000px"
+    };
     if ("IntersectionObserver" in window) {
       var lazyMediaObserver = new IntersectionObserver(function (
-        entries,
-        observer
-      ) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            var lazyMedia = entry.target;
-            if (entry.target.localName == "video") {
-              var source = Array.from(entry.target.children).filter(function (
-                x
-              ) {
-                return x.localName === "source";
-              })[0];
-              source.src = source.dataset.src;
-              lazyMedia.load();
-              lazyMedia.play();
-            } else {
-              lazyMedia.src = lazyMedia.dataset.src;
+          entries,
+          observer
+        ) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              var lazyMedia = entry.target;
+              if (entry.target.localName == "video") {
+                var source = Array.from(entry.target.children).filter(function (
+                  x
+                ) {
+                  return x.localName === "source";
+                })[0];
+                source.src = source.dataset.src;
+                lazyMedia.load();
+                lazyMedia.play();
+              } else {
+                lazyMedia.src = lazyMedia.dataset.src;
+              }
+              lazyMedia.classList.remove("lazy");
+              lazyMediaObserver.unobserve(lazyMedia);
             }
-            lazyMedia.classList.remove("lazy");
-            lazyMediaObserver.unobserve(lazyMedia);
-          }
-        });
-      },
-      IntersectionObserverOptions);
+          });
+        },
+        IntersectionObserverOptions);
       lazyImages.forEach(function (lazyImage) {
         lazyMediaObserver.observe(lazyImage);
       });
@@ -239,6 +242,7 @@ function App() {
         science.style.height = "initial";
       }
     }
+
     function tooltips() {
       var triggers = document.querySelectorAll("[data-target]");
       var figs = document.querySelectorAll(".fig");
@@ -264,6 +268,7 @@ function App() {
         });
       });
     }
+
     function init() {
       window.onload = setHeight;
       window.onresize = setHeight;
