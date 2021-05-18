@@ -1,381 +1,479 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="" />
+  <meta name="robots" content="index,follow" />
+  <meta name="generator" content="Eleventy" />
+  <meta name="copyright" content="Copyright 2021" />
+  <title>Home - The Limb Factory</title>
 
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/product.css" />
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 3.14.1, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link rel="canonical" href="" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@thelimbfactory" />
+  <meta name="twitter:creator" content="@thelimbfactory" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:title" content="The Limb Factory" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:width" content="1200" />
+  <meta name="twitter:image:height" content="675" />
+
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Home" />
+  <meta property="og:site_name" content="The Limb Factory" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="628" />
+  <meta property="og:image:alt" content="The Limb Factory logo" />
+  <meta property="og:locale" content="en_US" />
+
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+  <link rel="apple-touch-icon-precomposed" href="./img/logogif.gif" />
+
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/product.css" />
+  <link rel="stylesheet" href="nicepage.css" media="screen">
+  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+
+  <script
+    src="https://d33wubrfki0l68.cloudfront.net/js/0702166563391576805a66e648fa74e810c4bd75/assets/app.js"></script>
 </head>
 
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
 <body>
-    <header class="globalHeader" role="banner">
-        <div class="globalHeader-container">
-            <a href="/">
-                <h1 class="_hidden">The Limb Factory</h1>
-                <div class="logo">
-                    <img style="height: 3em" alt="sdfs" src="./img/logo.png" />
-                </div>
-            </a>
-
-            <svg aria-label="Open Navigation" class="hamburger" viewBox="0 0 100 100" width="80">
-                <path class="hamburger-line hamburger-top"
-                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-                <path class="hamburger-line hamburger-middle" d="m 30,50 h 40" />
-            </svg>
-
-            <nav class="navigation -header" aria-labelledby="header_navLabel">
-                <p id="header_navLabel" class="_hidden">Header Navigation</p>
-
-                <ul class="navigation-list">
-                    <li class="navigation-listItem">
-                        <a class="navigation-link" href="/product" data-state="active"> Product </a>
-                    </li>
-
-                    <li class="navigation-listItem">
-                        <a class="navigation-link" href="/science"> Science </a>
-                    </li>
-
-                    <li class="navigation-listItem">
-                        <a class="navigation-link" href="/about"> About Us </a>
-                    </li>
-
-                    <li class="navigation-listItem">
-                        <a class="navigation-link" href="/contact"> Contact Us </a>
-                    </li>
-
-                    <li class="navigation-listItem">
-                        <a class="navigation-link" href="/careers"> Careers </a>
-                    </li>
-
-                    <li class="navigation-listItem">
-                        <a class="navigation-link" href="/blog/"> Blog </a>
-                    </li>
-                </ul>
-
-                <div class="nav-social _mobile-only">
-                    <a class="-color-gray globalFooter-link" href="mailto:nishant@thelimbfactory.com"
-                        title="Reach out to The Limb Factory">
-                        nishant@thelimbfactory.com
-                    </a>
-
-                    <a class="-color-gray globalFooter-link" href="https://twitter.com/thelimbfactory"
-                        title="Follow The Limb Factory on Twitter">
-                        @thelimbfactory
-                    </a>
-
-                    <form id="header_navigation_mc_embed_signup"
-                        action="https://neuralink.us17.list-manage.com/subscribe/post?u=569c8d937524ae5126266001f&amp;id=a41ea28390"
-                        method="post" id="header_navigation_mc-embedded-subscribe-form"
-                        name="mc-embedded-subscribe-form" class="newsletter -small validate" target="_blank" novalidate>
-                        <div id="header_navigation_mc_embed_signup_scroll">
-                            <div class="mc-field-group">
-                                <label for="header_navigation_mce-EMAIL" class="_hidden">Email Address</label>
-                                <input type="email" value="" class="newsletter-input -small required email"
-                                    id="header_navigation_mce-EMAIL" placeholder="Enter Email for Updates" />
-                            </div>
-
-                            <div id="header_navigation_mce-responses" class="clear">
-                                <div class="response" id="header_navigation_mce-error-response" style="display: none">
-                                </div>
-                                <div class="response" id="header_navigation_mce-success-response" style="display: none">
-                                </div>
-                            </div>
-
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px" aria-hidden="true">
-                                <input type="text" name="header_navigation_b_569c8d937524ae5126266001f_a41ea28390"
-                                    tabindex="-1" value="" />
-                            </div>
-
-                            <button class="newsletter-submit" type="submit"
-                                id="header_navigation_mc-embedded-subscribe">
-                                <span class="_hidden"> Subscribe </span>
-
-                                <svg width="16" height="13" viewBox="0 0 16 13" fill="#BBBBBE"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.81016 12.8243H8.89016L15.1622 6.55227L8.89016 0.280273H6.81016L12.3302 5.78427H0.410156V7.32027H12.3302L6.81016 12.8243Z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </nav>
+  <header class="globalHeader" role="banner">
+    <div class="globalHeader-container">
+      <a href="/">
+        <h1 class="_hidden">The Limb Factory</h1>
+        <div class="logo">
+          <img style="height: 3em" alt="sdfs" src="./img/logo.png" />
         </div>
-    </header>
-
-    <section class="hero -red">
-        <div class="hero-stack container" style="background-image: url('./img/CAD\ Picture_ori.png')">
-            <h1 class="hero-headline -animatedLine">
-                Meet Bionicli
-            </h1>
-            <img class="hero-innerImage lazy"
-                data-src="https://d33wubrfki0l68.cloudfront.net/f6f61989efb464eed171eb98d0ef6ee53b231b48/71d5d/images/pages/red-mobile-hero.png">
-            <p class="hero-subheading">
-                A high functioning multi action bionic arm.
-            </p>
-            <p class="hero-cta ">
-                <a class="button -cta -openPopup" href="https://d2w07qfgh81qmg.cloudfront.net/qv8qsqHKnpxk6dELyGyG.mp4"
-                    title="Play the video">
-                    Play Video
-                    <span class="arrowPacman">
-                        <span class="arrowPacman-clip">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
-                                    fill="white"></path>
-                            </svg>
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
-                                    fill="white"></path>
-                            </svg>
-                        </span>
-                    </span>
-                </a>
-            </p>
+      </a>
+      <svg aria-label="Open Navigation" class="hamburger" viewBox="0 0 100 100" width="80">
+        <path class="hamburger-line hamburger-top"
+          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+        <path class="hamburger-line hamburger-middle" d="m 30,50 h 40" />
+      </svg>
+      <nav class="navigation -header" aria-labelledby="header_navLabel">
+        <p id="header_navLabel" class="_hidden">Header Navigation</p>
+        <ul class="navigation-list">
+          <li class="navigation-listItem">
+            <a class="navigation-link" href="/product.html" data-state="active"> Product </a>
+          </li>
+          <li class="navigation-listItem">
+            <a class="navigation-link" href="/science.html"> Science </a>
+          </li>
+          <li class="navigation-listItem">
+            <a class="navigation-link" href="/about.html"> About Us </a>
+          </li>
+          <li class="navigation-listItem">
+            <a class="navigation-link" href="/contact.html"> Contact Us </a>
+          </li>
+          <li class="navigation-listItem">
+            <a class="navigation-link" href="/careers.html"> Careers </a>
+          </li>
+          <li class="navigation-listItem">
+            <a class="navigation-link" href="/blog.html"> Blog </a>
+          </li>
+        </ul>
+        <div class="nav-social _mobile-only">
+          <a class="-color-gray globalFooter-link" href="mailto:nishant@thelimbfactory.com"
+            title="Reach out to The Limb Factory">
+            nishant@thelimbfactory.com
+          </a>
+          <a class="-color-gray globalFooter-link" href="https://twitter.com/thelimbfactory"
+            title="Follow The Limb Factory on Twitter">
+            @thelimbfactory
+          </a>
+          <form id="header_navigation_mc_embed_signup"
+            action="https://neuralink.us17.list-manage.com/subscribe/post?u=569c8d937524ae5126266001f&amp;id=a41ea28390"
+            method="post" id="header_navigation_mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+            class="newsletter -small validate" target="_blank" novalidate>
+            <div id="header_navigation_mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <label for="header_navigation_mce-EMAIL" class="_hidden">Email Address</label>
+                <input type="email" value="" class="newsletter-input -small required email"
+                  id="header_navigation_mce-EMAIL" placeholder="Enter Email for Updates" />
+              </div>
+              <div id="header_navigation_mce-responses" class="clear">
+                <div class="response" id="header_navigation_mce-error-response" style="display: none"></div>
+                <div class="response" id="header_navigation_mce-success-response" style="display: none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input type="text" name="header_navigation_b_569c8d937524ae5126266001f_a41ea28390" tabindex="-1"
+                  value="" />
+              </div>
+              <button class="newsletter-submit" type="submit" id="header_navigation_mc-embedded-subscribe">
+                <span class="_hidden"> Subscribe </span>
+                <svg width="16" height="13" viewBox="0 0 16 13" fill="#BBBBBE" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.81016 12.8243H8.89016L15.1622 6.55227L8.89016 0.280273H6.81016L12.3302 5.78427H0.410156V7.32027H12.3302L6.81016 12.8243Z" />
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
-    </section>
-    <!-- Main Content -->
+      </nav>
+    </div>
+  </header>
 
-    <section class="u-align-center u-clearfix u-section-1" id="sec-fb19">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-1">Key Features</h2>
-        <p class="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-        <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-21 u-icon-1">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d181"></use></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-d181"><path d="m40.6 11c2.3 0 4.4 0.9 6.1 2.5 5.4 5.4 10.8 19.2 8.9 21.2 0 0-0.3 0.3-1.5 0.3-5.5 0-16.1-5.7-19.5-9.2-3.4-3.4-3.4-8.9 0-12.2 1.5-1.7 3.7-2.6 6-2.6m46.8 0.1c2.2 0 4.4 0.8 6.1 2.4 3.4 3.4 3.4 8.9 0 12.2-3.4 3.5-14 9.2-19.5 9.2-1.1 0-1.5-0.3-1.5-0.3-1.9-1.9 3.5-15.7 8.9-21.2 1.6-1.5 3.8-2.3 6-2.3m32.6 32.1v16h-52v-16h52m-60 0v16h-52v-16h52m52 23.9v47.9h-44v-47.9h44m-52 0v47.9h-44v-47.9h44m-19.4-64.1c-4.4 0-8.6 1.7-11.7 4.9-6.5 6.5-6.5 17 0 23.5 1.2 1.2 2.8 2.5 4.7 3.8h-25.6c-4.4 0-8 3.6-8 8v24h8v55.8h112v-55.9h8v-24c0-4.4-3.6-8-8-8h-25.6c1.9-1.3 3.6-2.6 4.7-3.8 6.5-6.5 6.5-17 0-23.5-3-3-7.3-4.8-11.7-4.8s-8.7 1.7-11.7 4.8c-4.6 4.6-7.8 11.7-8.9 14.5-2.2 5.4-3 9.5-2.5 12.8h-0.5c0.5-3.2-0.4-7.4-2.5-12.8-1.2-2.8-4.3-9.9-8.9-14.5-3.2-3.1-7.4-4.8-11.8-4.8z"></path></svg>
+  <section class="hero -red">
+    <div class="hero-stack container" style="background-image: url('./img/CADPicture_ori.png')">
+      <h1 class="hero-headline -animatedLine">
+        Meet Bionicli
+      </h1>
+      <img class="hero-innerImage lazy"
+        data-src="./img/CADPicture_ori.png">
+      <p class="hero-subheading">
+        A high functioning multi action bionic arm.
+      </p>
+      <p class="hero-cta ">
+        <a class="button -cta -openPopup" href="https://d2w07qfgh81qmg.cloudfront.net/qv8qsqHKnpxk6dELyGyG.mp4"
+          title="Play the video">
+          Play Video
+          <span class="arrowPacman">
+            <span class="arrowPacman-clip">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
+                  fill="white"></path>
+              </svg>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
+                  fill="white"></path>
+              </svg>
+            </span>
           </span>
-                <h3 class="u-align-center u-text u-text-3">Gifts</h3>
-                <p class="u-align-center u-text u-text-4">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-color u-btn-1">learn more</a>
-              </div>
+        </a>
+      </p>
+    </div>
+  </section>
+  <!-- Main Content -->
+
+  <section class="u-align-center u-clearfix u-section-1" id="sec-fb19">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h2 class="u-text u-text-1">Key Features</h2>
+      <p class="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing
+        the text.</p>
+      <div class="u-expanded-width u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span
+                class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-21 u-icon-1">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d181"></use>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-d181">
+                  <path
+                    d="m40.6 11c2.3 0 4.4 0.9 6.1 2.5 5.4 5.4 10.8 19.2 8.9 21.2 0 0-0.3 0.3-1.5 0.3-5.5 0-16.1-5.7-19.5-9.2-3.4-3.4-3.4-8.9 0-12.2 1.5-1.7 3.7-2.6 6-2.6m46.8 0.1c2.2 0 4.4 0.8 6.1 2.4 3.4 3.4 3.4 8.9 0 12.2-3.4 3.5-14 9.2-19.5 9.2-1.1 0-1.5-0.3-1.5-0.3-1.9-1.9 3.5-15.7 8.9-21.2 1.6-1.5 3.8-2.3 6-2.3m32.6 32.1v16h-52v-16h52m-60 0v16h-52v-16h52m52 23.9v47.9h-44v-47.9h44m-52 0v47.9h-44v-47.9h44m-19.4-64.1c-4.4 0-8.6 1.7-11.7 4.9-6.5 6.5-6.5 17 0 23.5 1.2 1.2 2.8 2.5 4.7 3.8h-25.6c-4.4 0-8 3.6-8 8v24h8v55.8h112v-55.9h8v-24c0-4.4-3.6-8-8-8h-25.6c1.9-1.3 3.6-2.6 4.7-3.8 6.5-6.5 6.5-17 0-23.5-3-3-7.3-4.8-11.7-4.8s-8.7 1.7-11.7 4.8c-4.6 4.6-7.8 11.7-8.9 14.5-2.2 5.4-3 9.5-2.5 12.8h-0.5c0.5-3.2-0.4-7.4-2.5-12.8-1.2-2.8-4.3-9.9-8.9-14.5-3.2-3.1-7.4-4.8-11.8-4.8z">
+                  </path>
+                </svg>
+              </span>
+              <h3 class="u-align-center u-text u-text-3">Gifts</h3>
+              <p class="u-align-center u-text u-text-4">Sample text. Click to select the text box. Click again or double
+                click to start editing the text.</p>
+              <a href=""
+                class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-color u-btn-1">learn
+                more</a>
             </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-2">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-2323"></use></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-2323"><path d="m44.1 63.9h39.8c4.6 0 8.4-3.9 8.4-8.8v-1.8c0-5.6-2.8-10.7-7.3-13.3-2.4-1.4-5.4-2.9-8.8-4.1 2.8-3 4.6-6.9 4.6-11.3-0.1-9.2-7.6-16.6-16.8-16.6s-16.7 7.4-16.7 16.5c0 4.4 1.7 8.4 4.6 11.3-3.4 1.2-6.5 2.7-8.8 4.1-4.5 2.7-7.3 7.7-7.3 13.3v1.8c-0.1 4.9 3.7 8.9 8.3 8.9zm19.9-48c4.8 0 8.7 3.9 8.7 8.6 0 4.8-3.9 8.6-8.7 8.6s-8.7-3.9-8.7-8.6 3.9-8.6 8.7-8.6zm-20.3 37.3c0-2.7 1.3-5.3 3.4-6.5 4-2.3 10.2-5.1 16.9-5.1s12.9 2.8 16.9 5.1c2.1 1.2 3.4 3.8 3.4 6.5v1.8c0 0.6-0.3 0.9-0.4 0.9h-39.8c-0.1 0-0.4-0.3-0.4-0.9v-1.8zm5.5 40.9c-2.4-1.4-5.4-2.9-8.8-4.1 2.8-3 4.6-7 4.6-11.3 0-9.1-7.5-16.5-16.7-16.5s-16.7 7.4-16.7 16.5c0 4.4 1.7 8.4 4.6 11.3-3.4 1.2-6.5 2.7-8.8 4.1-4.6 2.6-7.4 7.7-7.4 13.3v1.8c0 4.9 3.8 8.8 8.4 8.8h39.8c4.6 0 8.4-3.9 8.4-8.8v-1.8c0-5.6-2.8-10.7-7.4-13.3zm-20.9-24.1c4.8 0 8.7 3.9 8.7 8.6 0 4.8-3.9 8.6-8.7 8.6s-8.7-3.9-8.7-8.6 3.9-8.6 8.7-8.6zm20.3 39.2c0 0.6-0.3 0.9-0.4 0.9h-39.8c-0.1 0-0.4-0.3-0.4-0.9v-1.8c0-2.7 1.3-5.3 3.4-6.5 4-2.3 10.2-5.1 16.9-5.1s12.9 2.8 16.9 5.1c2.1 1.2 3.4 3.8 3.4 6.5v1.8zm72.1-15.1c-2.4-1.4-5.4-2.9-8.8-4.1 2.8-3 4.6-6.9 4.6-11.3 0-9.1-7.5-16.5-16.7-16.5s-16.7 7.4-16.7 16.5c-0.1 4.3 1.7 8.3 4.5 11.3-3.4 1.2-6.5 2.7-8.8 4.1-4.5 2.7-7.3 7.7-7.3 13.3v1.8c0 4.9 3.8 8.8 8.4 8.8h39.8c4.6 0 8.4-3.9 8.4-8.8v-1.8c-0.1-5.6-2.9-10.7-7.4-13.3zm-21-24.1c4.8 0 8.7 3.9 8.7 8.6 0 4.8-3.9 8.6-8.7 8.6s-8.7-3.9-8.7-8.6 3.9-8.6 8.7-8.6zm20.3 39.2c0 0.6-0.3 0.9-0.4 0.9h-39.8c-0.1 0-0.4-0.3-0.4-0.9v-1.8c0-2.7 1.3-5.3 3.4-6.5 4-2.3 10.2-5.1 16.9-5.1s12.9 2.8 16.9 5.1c2.1 1.2 3.4 3.8 3.4 6.5v1.8z"></path></svg>
-          </span>
-                <h3 class="u-text u-text-5">Approach</h3>
-                <p class="u-text u-text-6">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-text-body-color u-btn-2">learn more</a>
-              </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span
+                class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-2">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-2323"></use>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-2323">
+                  <path
+                    d="m44.1 63.9h39.8c4.6 0 8.4-3.9 8.4-8.8v-1.8c0-5.6-2.8-10.7-7.3-13.3-2.4-1.4-5.4-2.9-8.8-4.1 2.8-3 4.6-6.9 4.6-11.3-0.1-9.2-7.6-16.6-16.8-16.6s-16.7 7.4-16.7 16.5c0 4.4 1.7 8.4 4.6 11.3-3.4 1.2-6.5 2.7-8.8 4.1-4.5 2.7-7.3 7.7-7.3 13.3v1.8c-0.1 4.9 3.7 8.9 8.3 8.9zm19.9-48c4.8 0 8.7 3.9 8.7 8.6 0 4.8-3.9 8.6-8.7 8.6s-8.7-3.9-8.7-8.6 3.9-8.6 8.7-8.6zm-20.3 37.3c0-2.7 1.3-5.3 3.4-6.5 4-2.3 10.2-5.1 16.9-5.1s12.9 2.8 16.9 5.1c2.1 1.2 3.4 3.8 3.4 6.5v1.8c0 0.6-0.3 0.9-0.4 0.9h-39.8c-0.1 0-0.4-0.3-0.4-0.9v-1.8zm5.5 40.9c-2.4-1.4-5.4-2.9-8.8-4.1 2.8-3 4.6-7 4.6-11.3 0-9.1-7.5-16.5-16.7-16.5s-16.7 7.4-16.7 16.5c0 4.4 1.7 8.4 4.6 11.3-3.4 1.2-6.5 2.7-8.8 4.1-4.6 2.6-7.4 7.7-7.4 13.3v1.8c0 4.9 3.8 8.8 8.4 8.8h39.8c4.6 0 8.4-3.9 8.4-8.8v-1.8c0-5.6-2.8-10.7-7.4-13.3zm-20.9-24.1c4.8 0 8.7 3.9 8.7 8.6 0 4.8-3.9 8.6-8.7 8.6s-8.7-3.9-8.7-8.6 3.9-8.6 8.7-8.6zm20.3 39.2c0 0.6-0.3 0.9-0.4 0.9h-39.8c-0.1 0-0.4-0.3-0.4-0.9v-1.8c0-2.7 1.3-5.3 3.4-6.5 4-2.3 10.2-5.1 16.9-5.1s12.9 2.8 16.9 5.1c2.1 1.2 3.4 3.8 3.4 6.5v1.8zm72.1-15.1c-2.4-1.4-5.4-2.9-8.8-4.1 2.8-3 4.6-6.9 4.6-11.3 0-9.1-7.5-16.5-16.7-16.5s-16.7 7.4-16.7 16.5c-0.1 4.3 1.7 8.3 4.5 11.3-3.4 1.2-6.5 2.7-8.8 4.1-4.5 2.7-7.3 7.7-7.3 13.3v1.8c0 4.9 3.8 8.8 8.4 8.8h39.8c4.6 0 8.4-3.9 8.4-8.8v-1.8c-0.1-5.6-2.9-10.7-7.4-13.3zm-21-24.1c4.8 0 8.7 3.9 8.7 8.6 0 4.8-3.9 8.6-8.7 8.6s-8.7-3.9-8.7-8.6 3.9-8.6 8.7-8.6zm20.3 39.2c0 0.6-0.3 0.9-0.4 0.9h-39.8c-0.1 0-0.4-0.3-0.4-0.9v-1.8c0-2.7 1.3-5.3 3.4-6.5 4-2.3 10.2-5.1 16.9-5.1s12.9 2.8 16.9 5.1c2.1 1.2 3.4 3.8 3.4 6.5v1.8z">
+                  </path>
+                </svg>
+              </span>
+              <h3 class="u-text u-text-5">Approach</h3>
+              <p class="u-text u-text-6">Sample text. Click to select the text box. Click again or double click to start
+                editing the text.</p>
+              <a href=""
+                class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-text-body-color u-btn-2">learn
+                more</a>
             </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><span class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-3">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-54aa"></use></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-54aa"><polygon points="128 3 17 3 17 24 25 24 25 11 120 11 120 24 111 24 111 32 120 32 120 95 111 95 111 103 128 103"></polygon><path d="m25 24h-25v100h111v-100h-86zm78 92h-95v-63h95v63zm0-71h-95v-13h95v13z"></path><path d="m46 74v21h-21v-21h21m8-8h-37v37h37v-37z"></path><rect x="62" y="66" width="32" height="8"></rect><rect x="62" y="81" width="32" height="8"></rect><rect x="62" y="95" width="32" height="8"></rect></svg>
-          </span>
-                <h3 class="u-text u-text-7">500+ Sites</h3>
-                <p class="u-text u-text-8">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-text-body-color u-btn-3">learn more</a>
-              </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><span
+                class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-3">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-54aa"></use>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-54aa">
+                  <polygon
+                    points="128 3 17 3 17 24 25 24 25 11 120 11 120 24 111 24 111 32 120 32 120 95 111 95 111 103 128 103">
+                  </polygon>
+                  <path d="m25 24h-25v100h111v-100h-86zm78 92h-95v-63h95v63zm0-71h-95v-13h95v13z"></path>
+                  <path d="m46 74v21h-21v-21h21m8-8h-37v37h37v-37z"></path>
+                  <rect x="62" y="66" width="32" height="8"></rect>
+                  <rect x="62" y="81" width="32" height="8"></rect>
+                  <rect x="62" y="95" width="32" height="8"></rect>
+                </svg>
+              </span>
+              <h3 class="u-text u-text-7">500+ Sites</h3>
+              <p class="u-text u-text-8">Sample text. Click to select the text box. Click again or double click to start
+                editing the text.</p>
+              <a href=""
+                class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-text-body-color u-btn-3">learn
+                more</a>
             </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-4">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4fee"></use></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-4fee"><path d="m119.4 104.8-17.8-30.8c1.6-1.3 2.5-3.4 2.4-5.6l-1.3-10.7 7.4-7.6c2.3-2.3 2.4-6.1 0.2-8.8l-7.4-7.9 1.5-10.8c0.3-3.2-2-6.4-5.2-7l-10.7-2.1-5.2-9.4c-1.1-2.2-3.3-3.5-5.8-3.5-0.8 0-1.5 0.1-2.3 0.4l-10.4 4.4-9.6-4.6c-0.9-0.5-1.9-0.7-3-0.7-0.6 0-1.3 0.1-1.9 0.3-1.6 0.5-2.9 1.5-3.8 3l-5.3 9.4-10.7 1.9c-3.4 0.6-5.7 3.7-5.4 7.1l1.3 10.7-7.4 7.6c-2.3 2.3-2.4 6.1-0.2 8.8l7.4 7.9-1.5 10.8c-0.3 2.3 0.8 4.6 2.7 5.9l-17.9 31.3c-0.7 1.1-0.7 2.6-0.1 3.9v0.1l0.1 0.1c0.8 1.2 2 1.9 3.4 1.9h19.2l8.7 14.9c0.8 1.2 2 1.9 3.4 1.9s2.8-0.8 3.5-2l16.6-27.9 16.8 28.3c0.8 1.2 2 1.9 3.4 1.9s2.8-0.8 3.5-2l8.7-15.3h19.2c1.4 0 2.7-0.8 3.4-1.9 0.9-1.1 0.9-2.7 0.1-3.9zm-34.9 11.3-17.9-30.5 7.4 3.6c0.9 0.4 1.8 0.6 2.9 0.6 2.4 0 4.6-1.2 5.7-3.2l5.3-9.4 5.8-1 15.4 26.6h-14.7c-1.4 0-2.8 0.8-3.5 2l-6.4 11.3zm-40-0.3-6.5-11c-0.8-1.2-2-1.9-3.4-1.9h-14.8l15.5-27 5.4 0.9 5.2 9.3c1.1 2.2 3.3 3.5 5.8 3.5 0.8 0 1.5-0.1 2.3-0.4l0.5-0.1 3.9-1.8 1.4 2.4-15.3 26.1zm-11.9-78.1c1.4-1.4 2.1-3.4 1.8-5.3l-1.2-10 10.2-1.8c1.9-0.3 3.6-1.6 4.6-3.2l4.9-8.8 9 4.3c0.9 0.5 1.9 0.7 2.9 0.7s2-0.2 2.9-0.7l9.2-4.1 4.9 9.1c1.1 1.7 2.7 2.9 4.5 3.1l10 1.9-1.4 10c-0.3 1.9 0.3 4 1.7 5.3l6.9 7.3-7 7.1c-1.5 1.4-2.1 3.4-1.8 5.3l1.2 9.9-9.9 1.6c-2 0.3-3.7 1.6-4.6 3.2l-4.9 8.8-9-4.3c-0.9-0.5-1.9-0.7-2.9-0.7s-2 0.2-2.9 0.7l-9.2 4.2-4.9-9c-1.1-1.7-2.8-2.9-4.6-3.1l-10.1-1.8 1.4-10c0.3-1.9-0.3-4-1.7-5.3l-6.8-7.4 6.8-7z"></path><path d="m64.5 71c14.7 0 26.6-11.7 26.6-26.2 0-14.4-11.9-26.2-26.6-26.2s-26.6 11.7-26.6 26.2 11.9 26.2 26.6 26.2zm0-44.4c10.2 0 18.6 8.2 18.6 18.3s-8.3 18.3-18.6 18.3c-10.2 0-18.6-8.2-18.6-18.3s8.4-18.3 18.6-18.3z"></path></svg>
-          </span>
-                <h3 class="u-text u-text-9">Quality</h3>
-                <p class="u-text u-text-10">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-color u-btn-4">learn more</a>
-              </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span
+                class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-4">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-4fee"></use>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-4fee">
+                  <path
+                    d="m119.4 104.8-17.8-30.8c1.6-1.3 2.5-3.4 2.4-5.6l-1.3-10.7 7.4-7.6c2.3-2.3 2.4-6.1 0.2-8.8l-7.4-7.9 1.5-10.8c0.3-3.2-2-6.4-5.2-7l-10.7-2.1-5.2-9.4c-1.1-2.2-3.3-3.5-5.8-3.5-0.8 0-1.5 0.1-2.3 0.4l-10.4 4.4-9.6-4.6c-0.9-0.5-1.9-0.7-3-0.7-0.6 0-1.3 0.1-1.9 0.3-1.6 0.5-2.9 1.5-3.8 3l-5.3 9.4-10.7 1.9c-3.4 0.6-5.7 3.7-5.4 7.1l1.3 10.7-7.4 7.6c-2.3 2.3-2.4 6.1-0.2 8.8l7.4 7.9-1.5 10.8c-0.3 2.3 0.8 4.6 2.7 5.9l-17.9 31.3c-0.7 1.1-0.7 2.6-0.1 3.9v0.1l0.1 0.1c0.8 1.2 2 1.9 3.4 1.9h19.2l8.7 14.9c0.8 1.2 2 1.9 3.4 1.9s2.8-0.8 3.5-2l16.6-27.9 16.8 28.3c0.8 1.2 2 1.9 3.4 1.9s2.8-0.8 3.5-2l8.7-15.3h19.2c1.4 0 2.7-0.8 3.4-1.9 0.9-1.1 0.9-2.7 0.1-3.9zm-34.9 11.3-17.9-30.5 7.4 3.6c0.9 0.4 1.8 0.6 2.9 0.6 2.4 0 4.6-1.2 5.7-3.2l5.3-9.4 5.8-1 15.4 26.6h-14.7c-1.4 0-2.8 0.8-3.5 2l-6.4 11.3zm-40-0.3-6.5-11c-0.8-1.2-2-1.9-3.4-1.9h-14.8l15.5-27 5.4 0.9 5.2 9.3c1.1 2.2 3.3 3.5 5.8 3.5 0.8 0 1.5-0.1 2.3-0.4l0.5-0.1 3.9-1.8 1.4 2.4-15.3 26.1zm-11.9-78.1c1.4-1.4 2.1-3.4 1.8-5.3l-1.2-10 10.2-1.8c1.9-0.3 3.6-1.6 4.6-3.2l4.9-8.8 9 4.3c0.9 0.5 1.9 0.7 2.9 0.7s2-0.2 2.9-0.7l9.2-4.1 4.9 9.1c1.1 1.7 2.7 2.9 4.5 3.1l10 1.9-1.4 10c-0.3 1.9 0.3 4 1.7 5.3l6.9 7.3-7 7.1c-1.5 1.4-2.1 3.4-1.8 5.3l1.2 9.9-9.9 1.6c-2 0.3-3.7 1.6-4.6 3.2l-4.9 8.8-9-4.3c-0.9-0.5-1.9-0.7-2.9-0.7s-2 0.2-2.9 0.7l-9.2 4.2-4.9-9c-1.1-1.7-2.8-2.9-4.6-3.1l-10.1-1.8 1.4-10c0.3-1.9-0.3-4-1.7-5.3l-6.8-7.4 6.8-7z">
+                  </path>
+                  <path
+                    d="m64.5 71c14.7 0 26.6-11.7 26.6-26.2 0-14.4-11.9-26.2-26.6-26.2s-26.6 11.7-26.6 26.2 11.9 26.2 26.6 26.2zm0-44.4c10.2 0 18.6 8.2 18.6 18.3s-8.3 18.3-18.6 18.3c-10.2 0-18.6-8.2-18.6-18.3s8.4-18.3 18.6-18.3z">
+                  </path>
+                </svg>
+              </span>
+              <h3 class="u-text u-text-9">Quality</h3>
+              <p class="u-text u-text-10">Sample text. Click to select the text box. Click again or double click to
+                start editing the text.</p>
+              <a href=""
+                class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-color u-btn-4">learn
+                more</a>
             </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5"><span class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-5">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7adb"></use></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-7adb"><path d="m117.4 76c1.5 0 2.7 1.2 2.7 2.7v38.7c0 1.5-1.2 2.7-2.7 2.7h-38.7c-1.5 0-2.7-1.2-2.7-2.7v-38.7c0-1.5 1.2-2.7 2.7-2.7h38.7m0-7.9h-38.7c-5.8 0-10.6 4.8-10.6 10.6v38.7c0 5.8 4.8 10.6 10.6 10.6h38.7c5.8 0 10.6-4.8 10.6-10.6v-38.7c0-5.8-4.8-10.6-10.6-10.6z"></path><path d="m49.3 7.9c1.5 0 2.7 1.2 2.7 2.7v38.7c0 1.5-1.2 2.7-2.7 2.7h-38.7c-1.5 0-2.7-1.2-2.7-2.7v-38.7c0-1.5 1.2-2.7 2.7-2.7h38.7m0-7.9h-38.7c-5.8 0-10.6 4.8-10.6 10.6v38.7c0 5.8 4.8 10.6 10.6 10.6h38.7c5.8 0 10.6-4.8 10.6-10.6v-38.7c0-5.8-4.8-10.6-10.6-10.6z"></path><path d="m90 7.9c0.7 0 1.4 0.3 1.9 0.8l27.4 27.4c1 1 1 2.7 0 3.8l-27.4 27.3c-0.5 0.5-1.2 0.8-1.9 0.8s-1.4-0.3-1.9-0.8l-27.3-27.3c-1-1-1-2.7 0-3.8l27.3-27.4c0.6-0.5 1.3-0.8 1.9-0.8m0-7.9c-2.8 0-5.5 1.1-7.5 3.1l-27.3 27.4c-2 2-3.1 4.7-3.1 7.5s1.1 5.5 3.1 7.5l27.4 27.4c2 2 4.7 3.1 7.5 3.1s5.5-1.1 7.5-3.1l27.4-27.4c2-2 3.1-4.7 3.1-7.5s-1.1-5.5-3.1-7.5l-27.5-27.4c-2-2-4.6-3.1-7.5-3.1z"></path><path d="m49.3 76c1.5 0 2.7 1.2 2.7 2.7v38.7c0 1.5-1.2 2.7-2.7 2.7h-38.7c-1.5 0-2.7-1.2-2.7-2.7v-38.7c0-1.5 1.2-2.7 2.7-2.7h38.7m0-7.9h-38.7c-5.8 0-10.6 4.8-10.6 10.6v38.7c0 5.8 4.8 10.6 10.6 10.6h38.7c5.8 0 10.6-4.8 10.6-10.6v-38.7c0-5.8-4.8-10.6-10.6-10.6z"></path></svg>
-          </span>
-                <h3 class="u-text u-text-11">Design</h3>
-                <p class="u-text u-text-12">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-text-body-color u-btn-5">learn more</a>
-              </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5"><span
+                class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-5">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7adb"></use>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-7adb">
+                  <path
+                    d="m117.4 76c1.5 0 2.7 1.2 2.7 2.7v38.7c0 1.5-1.2 2.7-2.7 2.7h-38.7c-1.5 0-2.7-1.2-2.7-2.7v-38.7c0-1.5 1.2-2.7 2.7-2.7h38.7m0-7.9h-38.7c-5.8 0-10.6 4.8-10.6 10.6v38.7c0 5.8 4.8 10.6 10.6 10.6h38.7c5.8 0 10.6-4.8 10.6-10.6v-38.7c0-5.8-4.8-10.6-10.6-10.6z">
+                  </path>
+                  <path
+                    d="m49.3 7.9c1.5 0 2.7 1.2 2.7 2.7v38.7c0 1.5-1.2 2.7-2.7 2.7h-38.7c-1.5 0-2.7-1.2-2.7-2.7v-38.7c0-1.5 1.2-2.7 2.7-2.7h38.7m0-7.9h-38.7c-5.8 0-10.6 4.8-10.6 10.6v38.7c0 5.8 4.8 10.6 10.6 10.6h38.7c5.8 0 10.6-4.8 10.6-10.6v-38.7c0-5.8-4.8-10.6-10.6-10.6z">
+                  </path>
+                  <path
+                    d="m90 7.9c0.7 0 1.4 0.3 1.9 0.8l27.4 27.4c1 1 1 2.7 0 3.8l-27.4 27.3c-0.5 0.5-1.2 0.8-1.9 0.8s-1.4-0.3-1.9-0.8l-27.3-27.3c-1-1-1-2.7 0-3.8l27.3-27.4c0.6-0.5 1.3-0.8 1.9-0.8m0-7.9c-2.8 0-5.5 1.1-7.5 3.1l-27.3 27.4c-2 2-3.1 4.7-3.1 7.5s1.1 5.5 3.1 7.5l27.4 27.4c2 2 4.7 3.1 7.5 3.1s5.5-1.1 7.5-3.1l27.4-27.4c2-2 3.1-4.7 3.1-7.5s-1.1-5.5-3.1-7.5l-27.5-27.4c-2-2-4.6-3.1-7.5-3.1z">
+                  </path>
+                  <path
+                    d="m49.3 76c1.5 0 2.7 1.2 2.7 2.7v38.7c0 1.5-1.2 2.7-2.7 2.7h-38.7c-1.5 0-2.7-1.2-2.7-2.7v-38.7c0-1.5 1.2-2.7 2.7-2.7h38.7m0-7.9h-38.7c-5.8 0-10.6 4.8-10.6 10.6v38.7c0 5.8 4.8 10.6 10.6 10.6h38.7c5.8 0 10.6-4.8 10.6-10.6v-38.7c0-5.8-4.8-10.6-10.6-10.6z">
+                  </path>
+                </svg>
+              </span>
+              <h3 class="u-text u-text-11">Design</h3>
+              <p class="u-text u-text-12">Sample text. Click to select the text box. Click again or double click to
+                start editing the text.</p>
+              <a href=""
+                class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-text-body-color u-btn-5">learn
+                more</a>
             </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-6"><span class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-6">
-            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0309"></use></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-0309"><path d="m102.7 39.2c0.8 0 1.5 0.3 2.1 0.9l7.8 7.8c4.8 4.8 7.7 11.5 7.4 18.3-0.6 12.6-11 22.6-23.7 22.6h-29c-0.1 0-0.1-0.1-0.1-0.2 1.1-3 4.1-5.2 7.5-5.2h10.5c0.9 0 1.8-0.4 2.3-1.1 0.8-1.1 0.7-2.6-0.3-3.5l-24.9-24.8c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.5 0.9-2.1 1.3-0.8 2.1-0.8 1.5 0.3 2.1 0.8l16.9 16.9c0.5 0.5 1.2 0.8 1.9 0.8s1.4-0.3 1.9-0.8 0.8-1.2 0.8-1.9-0.3-1.4-0.8-1.9l-6.7-6.7c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.5 0.9-2.1 1.3-0.8 2.1-0.8 1.5 0.3 2.1 0.8l4 4c0.5 0.5 1.2 0.8 1.9 0.8s1.4-0.3 1.9-0.8 0.8-1.2 0.8-1.9-0.3-1.4-0.8-1.9l-2.7-2.7c-0.5-0.5-0.8-1.2-0.8-2s0.3-1.5 0.9-2.1 1.3-0.9 2.1-0.9 1.5 0.3 2.1 0.9l2.7 2.7c0.5 0.5 1.2 0.8 1.9 0.8s1.4-0.3 1.9-0.8 0.8-1.2 0.8-1.9-0.2-1.3-0.7-1.8c-0.8-0.9-1.2-2.1-0.8-3.3 0.5-1.3 1.6-1.9 2.8-1.9m0-8c-2.9 0-5.7 1.1-7.8 3.2-0.7 0.7-1.2 1.4-1.7 2.1 0 0-0.1 0.1-0.1 0-0.4 0-0.8-0.1-1.1-0.1-2.9 0-5.7 1.1-7.8 3.2-1 1-1.8 2.2-2.3 3.4 0 0 0 0.1-0.1 0.1-2.6 0.2-5.1 1.3-6.9 3.2l-0.2 0.2-2.5-2.5c-2-2-4.9-3.2-7.8-3.2s-5.7 1.1-7.8 3.2-3.2 4.9-3.2 7.8c0 3 1.2 5.7 3.2 7.8l15.8 15.8c0.1 0.1 0 0.2-0.1 0.2-5.8 0.8-10.8 4.8-12.8 10.5-1.9 5.2 2 10.7 7.5 10.7h29.1c8.5 0 16.4-3.3 22.4-9.3 6.1-6.1 9.4-14.3 9.3-23-0.1-8.4-3.8-16.4-9.8-22.4l-7.8-7.8c-1.8-2-4.6-3.1-7.5-3.1z"></path><path d="m82.1 118c0 1.1-0.9 2-2 2h-70.2c-1.1 0-2-0.9-2-2v-108c0-1.1 0.9-2 2-2h70.1c1.1 0 2 0.9 2 2v16.9c0 2.2 1.8 4 4 4s4-1.8 4-4v-16.9c0-5.5-4.5-10-9.9-10h-70.2c-5.4 0-9.9 4.5-9.9 10v108c0 5.5 4.5 10 9.9 10h70.1c5.5 0 9.9-4.5 9.9-10v-10.6c0-2.2-1.8-4-4-4s-4 1.8-4 4v10.6z"></path></svg>
-          </span>
-                <h3 class="u-text u-text-13">No Coding</h3>
-                <p class="u-text u-text-14">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                <a href="" class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-text-body-color u-btn-6">learn more</a>
-              </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-6"><span
+                class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-20 u-icon-6">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0309"></use>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-0309">
+                  <path
+                    d="m102.7 39.2c0.8 0 1.5 0.3 2.1 0.9l7.8 7.8c4.8 4.8 7.7 11.5 7.4 18.3-0.6 12.6-11 22.6-23.7 22.6h-29c-0.1 0-0.1-0.1-0.1-0.2 1.1-3 4.1-5.2 7.5-5.2h10.5c0.9 0 1.8-0.4 2.3-1.1 0.8-1.1 0.7-2.6-0.3-3.5l-24.9-24.8c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.5 0.9-2.1 1.3-0.8 2.1-0.8 1.5 0.3 2.1 0.8l16.9 16.9c0.5 0.5 1.2 0.8 1.9 0.8s1.4-0.3 1.9-0.8 0.8-1.2 0.8-1.9-0.3-1.4-0.8-1.9l-6.7-6.7c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.5 0.9-2.1 1.3-0.8 2.1-0.8 1.5 0.3 2.1 0.8l4 4c0.5 0.5 1.2 0.8 1.9 0.8s1.4-0.3 1.9-0.8 0.8-1.2 0.8-1.9-0.3-1.4-0.8-1.9l-2.7-2.7c-0.5-0.5-0.8-1.2-0.8-2s0.3-1.5 0.9-2.1 1.3-0.9 2.1-0.9 1.5 0.3 2.1 0.9l2.7 2.7c0.5 0.5 1.2 0.8 1.9 0.8s1.4-0.3 1.9-0.8 0.8-1.2 0.8-1.9-0.2-1.3-0.7-1.8c-0.8-0.9-1.2-2.1-0.8-3.3 0.5-1.3 1.6-1.9 2.8-1.9m0-8c-2.9 0-5.7 1.1-7.8 3.2-0.7 0.7-1.2 1.4-1.7 2.1 0 0-0.1 0.1-0.1 0-0.4 0-0.8-0.1-1.1-0.1-2.9 0-5.7 1.1-7.8 3.2-1 1-1.8 2.2-2.3 3.4 0 0 0 0.1-0.1 0.1-2.6 0.2-5.1 1.3-6.9 3.2l-0.2 0.2-2.5-2.5c-2-2-4.9-3.2-7.8-3.2s-5.7 1.1-7.8 3.2-3.2 4.9-3.2 7.8c0 3 1.2 5.7 3.2 7.8l15.8 15.8c0.1 0.1 0 0.2-0.1 0.2-5.8 0.8-10.8 4.8-12.8 10.5-1.9 5.2 2 10.7 7.5 10.7h29.1c8.5 0 16.4-3.3 22.4-9.3 6.1-6.1 9.4-14.3 9.3-23-0.1-8.4-3.8-16.4-9.8-22.4l-7.8-7.8c-1.8-2-4.6-3.1-7.5-3.1z">
+                  </path>
+                  <path
+                    d="m82.1 118c0 1.1-0.9 2-2 2h-70.2c-1.1 0-2-0.9-2-2v-108c0-1.1 0.9-2 2-2h70.1c1.1 0 2 0.9 2 2v16.9c0 2.2 1.8 4 4 4s4-1.8 4-4v-16.9c0-5.5-4.5-10-9.9-10h-70.2c-5.4 0-9.9 4.5-9.9 10v108c0 5.5 4.5 10 9.9 10h70.1c5.5 0 9.9-4.5 9.9-10v-10.6c0-2.2-1.8-4-4-4s-4 1.8-4 4v10.6z">
+                  </path>
+                </svg>
+              </span>
+              <h3 class="u-text u-text-13">No Coding</h3>
+              <p class="u-text u-text-14">Sample text. Click to select the text box. Click again or double click to
+                start editing the text.</p>
+              <a href=""
+                class="u-active-none u-border-2 u-border-palette-2-light-1 u-btn u-btn-rectangle u-button-style u-hover-none u-text-body-color u-btn-6">learn
+                more</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <a href="./science.html">
+    <section class="hero -footer _desktop-only -highlightHover -blue">
+      <div class="hero-stack container" style="background-image: url('/images/pages/blue-desktop-hero.png')">
+        <h1 class="hero-headline -animatedLine">
+          Science behind Bionicli
+        </h1>
+        <p class="hero-subheading">
+          A web of communication that allows you to move, think, feel and sense.
+        </p>
+        <p class="hero-cta">
+          <span class="button -cta">
+            Science
+            <span class="arrowPacman">
+              <span class="arrowPacman-clip">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
+                    fill="white"></path>
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
+                    fill="white"></path>
+                </svg>
+              </span>
+            </span>
+          </span>
+        </p>
+
+      </div>
     </section>
-
-    <!-- Footer -->
-    <a href="./science.html">
-        <section class="hero -footer _desktop-only -highlightHover -blue">
-            <div class="hero-stack container" style="background-image: url('/images/pages/blue-desktop-hero.png')">
-                <h1 class="hero-headline -animatedLine">
-                    Science behind Bionicli
-                </h1>
-                <p class="hero-subheading">
-                    A web of communication that allows you to move, think, feel and sense.
-                </p>
-                <p class="hero-cta">
-                    <span class="button -cta">
-                        Science
-                        <span class="arrowPacman">
-                            <span class="arrowPacman-clip">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
-                                        fill="white"></path>
-                                </svg>
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.10081 0L5.88245 1.23617L10.7016 6.12576H0V7.87423H10.7016L5.88245 12.7638L7.10081 14L14 7L7.10081 0Z"
-                                        fill="white"></path>
-                                </svg>
-                            </span>
-                        </span>
-                    </span>
-                </p>
-
-            </div>
-        </section>
-    </a>
-    <footer class="globalFooter" role="contentinfo">
-        <div class="globalFooter-content">
-          <a class="globalFooter-logo" href="/" title="Go to Neuralink homepage">
-            <div class="logo">
-              <img style="height: 3em" alt="sdfs" src="./img/logo.png" />
-            </div>
-          </a>
-          <div class="globalFooter-copyright">
-            <p>&copy; The Limb Factory 2021</p>
-            <p>All Rights Reserved.</p>
-          </div>
-          <div class="globalFooter-navigation">
-            <nav class="navigation -footer" aria-labelledby="footer_navLabel">
-              <p id="footer_navLabel" class="_hidden">Footer Navigation</p>
-              <ul class="navigation-list">
-                <li class="navigation-listItem">
-                  <a class="navigation-link" href="./product.html"> Product </a>
-                </li>
-                <li class="navigation-listItem">
-                  <a class="navigation-link" href="./science.html"> Science </a>
-                </li>
-                <li class="navigation-listItem">
-                  <a class="navigation-link" href="./about.html"> About Us </a>
-                </li>
-                <li class="navigation-listItem">
-                  <a class="navigation-link" href="./contactus.html"> Contact Us </a>
-                </li>
-                <li class="navigation-listItem">
-                  <a class="navigation-link" href="/careers.html"> Careers </a>
-                </li>
-                <li class="navigation-listItem">
-                  <a class="navigation-link" href="./blog/"> Blog </a>
-                </li>
-              </ul>
-              <div class="nav-social _mobile-only">
-                <a class="-color-gray globalFooter-link" href="mailto:nishant@thelimbfactory.com"
-                  title="Reach out to thelimbfactory">
-                  nishant@thelimbfactory.com
-                </a>
-                <a class="-color-gray globalFooter-link" href="https://www.instagram.com/thelimbfactory/"
-                  title="Follow The Limb Factory on Instagram">
-                  @thelimbfactory
-                </a>
-                <form id="footer_navigation_mc_embed_signup"
-                  action="https://neuralink.us17.list-manage.com/subscribe/post?u=569c8d937524ae5126266001f&amp;id=a41ea28390"
-                  method="post" id="footer_navigation_mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                  class="newsletter -small validate" target="_blank" novalidate>
-                  <div id="footer_navigation_mc_embed_signup_scroll">
-                    <div class="mc-field-group">
-                      <label for="footer_navigation_mce-EMAIL" class="_hidden">Email Address</label>
-                      <input type="email" value="" class="newsletter-input -small required email"
-                        id="footer_navigation_mce-EMAIL" placeholder="Enter Email for Updates" />
-                    </div>
-                    <div id="footer_navigation_mce-responses" class="clear">
-                      <div class="response" id="footer_navigation_mce-error-response" style="display: none"></div>
-                      <div class="response" id="footer_navigation_mce-success-response" style="display: none"></div>
-                    </div>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px" aria-hidden="true">
-                      <input type="text" name="footer_navigation_b_569c8d937524ae5126266001f_a41ea28390" tabindex="-1"
-                        value="" />
-                    </div>
-                    <button class="newsletter-submit" type="submit" id="footer_navigation_mc-embedded-subscribe">
-                      <span class="_hidden"> Subscribe </span>
-                      <svg width="16" height="13" viewBox="0 0 16 13" fill="#BBBBBE" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.81016 12.8243H8.89016L15.1622 6.55227L8.89016 0.280273H6.81016L12.3302 5.78427H0.410156V7.32027H12.3302L6.81016 12.8243Z" />
-                      </svg>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </nav>
-          </div>
-          <div class="globalFooter-right">
-            <div class="globalFooter-social">
-              <a class="-color-gray globalFooter-link" href="mailto:nishant@thelimbfactory.com"
-                title="Reach out to thelimbfactory">
-                nishant@thelimbfactory.com
-              </a>
-              <a class="-color-gray globalFooter-link" href="https://www.instagram.com/thelimbfactory/"
-                title="Follow The Limb Factory on Instagram">
-                @thelimbfactory
-              </a>
-              <form id="footer_mc_embed_signup"
-                action="https://neuralink.us17.list-manage.com/subscribe/post?u=569c8d937524ae5126266001f&amp;id=a41ea28390"
-                method="post" id="footer_mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                class="newsletter -small validate" target="_blank" novalidate>
-                <div id="footer_mc_embed_signup_scroll">
-                  <div class="mc-field-group">
-                    <label for="footer_mce-EMAIL" class="_hidden">Email Address</label>
-                    <input type="email" value="" class="newsletter-input -small required email" id="footer_mce-EMAIL"
-                      placeholder="Enter Email for Updates" />
-                  </div>
-                  <div id="footer_mce-responses" class="clear">
-                    <div class="response" id="footer_mce-error-response" style="display: none"></div>
-                    <div class="response" id="footer_mce-success-response" style="display: none"></div>
-                  </div>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px" aria-hidden="true">
-                    <input type="text" name="footer_b_569c8d937524ae5126266001f_a41ea28390" tabindex="-1" value="" />
-                  </div>
-                  <button class="newsletter-submit" type="submit" id="footer_mc-embedded-subscribe">
-                    <span class="_hidden"> Subscribe </span>
-    
-                    <svg width="16" height="13" viewBox="0 0 16 13" fill="#BBBBBE" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M6.81016 12.8243H8.89016L15.1622 6.55227L8.89016 0.280273H6.81016L12.3302 5.78427H0.410156V7.32027H12.3302L6.81016 12.8243Z" />
-                    </svg>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
+  </a>
+  <footer class="globalFooter" role="contentinfo">
+    <div class="globalFooter-content">
+      <a class="globalFooter-logo" href="/" title="Go to Neuralink homepage">
+        <div class="logo">
+          <img style="height: 3em" alt="sdfs" src="./img/logo.png" />
         </div>
-      </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
+      </a>
+      <div class="globalFooter-copyright">
+        <p>&copy; The Limb Factory 2021</p>
+        <p>All Rights Reserved.</p>
+      </div>
+      <div class="globalFooter-navigation">
+        <nav class="navigation -footer" aria-labelledby="footer_navLabel">
+          <p id="footer_navLabel" class="_hidden">Footer Navigation</p>
+          <ul class="navigation-list">
+            <li class="navigation-listItem">
+              <a class="navigation-link" href="./product.html"> Product </a>
+            </li>
+            <li class="navigation-listItem">
+              <a class="navigation-link" href="./science.html"> Science </a>
+            </li>
+            <li class="navigation-listItem">
+              <a class="navigation-link" href="./about.html"> About Us </a>
+            </li>
+            <li class="navigation-listItem">
+              <a class="navigation-link" href="./contact.html"> Contact Us </a>
+            </li>
+            <li class="navigation-listItem">
+              <a class="navigation-link" href="/careers.html"> Careers </a>
+            </li>
+            <li class="navigation-listItem">
+              <a class="navigation-link" href="./blog/"> Blog </a>
+            </li>
+          </ul>
+          <div class="nav-social _mobile-only">
+            <a class="-color-gray globalFooter-link" href="mailto:nishant@thelimbfactory.com"
+              title="Reach out to thelimbfactory">
+              nishant@thelimbfactory.com
+            </a>
+            <a class="-color-gray globalFooter-link" href="https://www.instagram.com/thelimbfactory/"
+              title="Follow The Limb Factory on Instagram">
+              @thelimbfactory
+            </a>
+            <form id="footer_navigation_mc_embed_signup"
+              action="https://neuralink.us17.list-manage.com/subscribe/post?u=569c8d937524ae5126266001f&amp;id=a41ea28390"
+              method="post" id="footer_navigation_mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+              class="newsletter -small validate" target="_blank" novalidate>
+              <div id="footer_navigation_mc_embed_signup_scroll">
+                <div class="mc-field-group">
+                  <label for="footer_navigation_mce-EMAIL" class="_hidden">Email Address</label>
+                  <input type="email" value="" class="newsletter-input -small required email"
+                    id="footer_navigation_mce-EMAIL" placeholder="Enter Email for Updates" />
+                </div>
+                <div id="footer_navigation_mce-responses" class="clear">
+                  <div class="response" id="footer_navigation_mce-error-response" style="display: none"></div>
+                  <div class="response" id="footer_navigation_mce-success-response" style="display: none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px" aria-hidden="true">
+                  <input type="text" name="footer_navigation_b_569c8d937524ae5126266001f_a41ea28390" tabindex="-1"
+                    value="" />
+                </div>
+                <button class="newsletter-submit" type="submit" id="footer_navigation_mc-embedded-subscribe">
+                  <span class="_hidden"> Subscribe </span>
+                  <svg width="16" height="13" viewBox="0 0 16 13" fill="#BBBBBE" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.81016 12.8243H8.89016L15.1622 6.55227L8.89016 0.280273H6.81016L12.3302 5.78427H0.410156V7.32027H12.3302L6.81016 12.8243Z" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="globalFooter-right">
+        <div class="globalFooter-social">
+          <a class="-color-gray globalFooter-link" href="mailto:nishant@thelimbfactory.com"
+            title="Reach out to thelimbfactory">
+            nishant@thelimbfactory.com
+          </a>
+          <a class="-color-gray globalFooter-link" href="https://www.instagram.com/thelimbfactory/"
+            title="Follow The Limb Factory on Instagram">
+            @thelimbfactory
+          </a>
+          <form id="footer_mc_embed_signup"
+            action="https://neuralink.us17.list-manage.com/subscribe/post?u=569c8d937524ae5126266001f&amp;id=a41ea28390"
+            method="post" id="footer_mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+            class="newsletter -small validate" target="_blank" novalidate>
+            <div id="footer_mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <label for="footer_mce-EMAIL" class="_hidden">Email Address</label>
+                <input type="email" value="" class="newsletter-input -small required email" id="footer_mce-EMAIL"
+                  placeholder="Enter Email for Updates" />
+              </div>
+              <div id="footer_mce-responses" class="clear">
+                <div class="response" id="footer_mce-error-response" style="display: none"></div>
+                <div class="response" id="footer_mce-success-response" style="display: none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input type="text" name="footer_b_569c8d937524ae5126266001f_a41ea28390" tabindex="-1" value="" />
+              </div>
+              <button class="newsletter-submit" type="submit" id="footer_mc-embedded-subscribe">
+                <span class="_hidden"> Subscribe </span>
+
+                <svg width="16" height="13" viewBox="0 0 16 13" fill="#BBBBBE" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.81016 12.8243H8.89016L15.1622 6.55227L8.89016 0.280273H6.81016L12.3302 5.78427H0.410156V7.32027H12.3302L6.81016 12.8243Z" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
