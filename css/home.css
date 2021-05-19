@@ -2443,3 +2443,39 @@ html:not(.can-touch) .awards__link:hover:after {
   justify-content: center;
   text-align: center;
 }
+
+.awards-headline,
+.grants-headline{
+  color: var(--color-type-light) !important;
+  color: inherit;
+  border-bottom: 1px solid var(--color-type-light);
+  margin-bottom: calc(var(--grid-gutters) / 2);
+  padding-bottom: calc(var(--grid-gutters) / 2);
+}
+
+@media (min-width: 768px) {
+  .awards-headline,
+  .grants-headline {
+    border-bottom-width: 2px;
+  }
+}
+
+.awards{
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-tertiary-weight-medium);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: var(--color-type-light);
+}
+
+.industry-experts{
+  font-family: var(--font-tertiary);
+  font-weight: var(--font-tertiary-weight-medium);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: var(--color-type-light);
+}
