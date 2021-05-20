@@ -1382,6 +1382,7 @@ div.aboutColumns-image img {
 .hero-headline,
 .hero-subheading {
   color: inherit;
+  font-size: 20px;
 }
 
 .hero-headline {
@@ -1389,6 +1390,7 @@ div.aboutColumns-image img {
   font-weight: var(--font-primary-weight-medium);
   letter-spacing: -0.03em;
   margin-bottom: 0;
+  font-size: 50px;
 }
 
 .hero-headline.-animatedLine {
@@ -1440,16 +1442,7 @@ div.aboutColumns-image img {
   }
 }
 
-.hero-innerImage {
-  display: block;
-  margin: var(--grid-gutters) auto;
-}
 
-@media (min-width: 768px) {
-  .hero-innerImage {
-    display: none;
-  }
-}
 
 .hero-cta {
   margin-top: var(--grid-gutters);
